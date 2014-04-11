@@ -1,31 +1,35 @@
 {
-  "name": "coupon",
-  "version": "0.1.0",
-  "description": "Coupons generator for e-commerce",
-  "main": "index.js",
-  "scripts": {
-    "test": "mocha"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:tmshv/coupon.git"
-  },
-  "keywords": [
-    "coupon",
-    "e-commerce"
-  ],
-  "author": "Roman Timashev",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/tmshv/coupon/issues"
-  },
-  "homepage": "https://github.com/tmshv/coupon",
-  "dependencies": {
-    "coupon-code": "~0.3.0"
-  },
-  "devDependencies": {
-    "should": "~3.3.0",
-    "mocha": "~1.18.2",
-    "underscore": "~1.6.0"
-  }
+    "name": "coupon",
+    "version": "0.1.1",
+    "description": "Coupons generator for e-commerce",
+    "main": "index.js",
+    "scripts": {
+        "test": "./node_modules/.bin/mocha"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:tmshv/coupon.git"
+    },
+    "keywords": [
+        "coupon",
+        "e-commerce"
+    ],
+    "author": "Roman Timashev",
+    "license": {
+        "type": "MIT",
+        "url": "http://github.com/tmshv/coupon/raw/master/LICENSE"
+    },
+    "bugs": {
+        "mail": "roman@tmshv.ru",
+        "url": "https://github.com/tmshv/coupon/issues"
+    },
+    "homepage": "https://github.com/tmshv/coupon",
+    "dependencies": {
+        "coupon-code": "~0.3.0"
+    },
+    "devDependencies": {
+        "should": "~3.3.0",
+        "mocha": "~1.18.2",
+        "underscore": "~1.6.0"
+    }
 }
