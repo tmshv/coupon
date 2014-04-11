@@ -41,11 +41,11 @@ console.log(myCoupon.json());
 ```
 ```js
 {
-  id: 'K5PL08XU1GG71T9VW00Y4CEUJFVPMM2F',
-  name: 'HELLO-JOHN',
-  user: 'John',
-  countMax: 1,
-  discount: 0.2 
+	id: 'K5PL08XU1GG71T9VW00Y4CEUJFVPMM2F',
+	name: 'HELLO-JOHN',
+	user: 'John',
+	countMax: 1,
+	discount: 0.2 
 }
 ```
 
@@ -91,7 +91,7 @@ coupon().give("5%");
 ```
 ## Test
 
-npm test
+	npm test
 
 ## License
 
