@@ -1,8 +1,7 @@
-# Coupon -- Discount coupons generator
-
+# Coupon
 [![NPM](https://nodei.co/npm/coupon.png)](https://nodei.co/npm/coupon/)
 
-Coupon is designed to be the simplest way possible to create a discount coupons for e-commerce purposes.
+Coupon — discount coupons generator. Coupon is designed to be the simplest way possible to create a discount coupons for e-commerce purposes.
 
 ## Installation
 
@@ -11,7 +10,12 @@ Coupon is designed to be the simplest way possible to create a discount coupons 
 ## Usage:
 ```js
 var coupon = require("coupon");
-var myCoupon = coupon("GREAT-30").give("30%").limit(10).person("Mr. Fetus").only("Banana").expire(new Date(2015, 0, 1));
+var myCoupon = coupon("GREAT-30")
+	.give("30%")
+	.limit(10)
+	.person("Mr. Fetus")
+	.only("Banana")
+	.expire(new Date(2015, 0, 1));
 console.log(myCoupon.json());
 ```
 
@@ -23,11 +27,11 @@ var myCoupon = coupon("HELLO-5").give("5%");
 console.log(myCoupon.json());
 ```
 ```js
-  { 
-		id: 'W0YEPW913C8M279D0ECV2P5P0C11QAV1',
-  	name: 'HELLO-5',
-  	discount: 0.05
-	}
+{
+	id: 'W0YEPW913C8M279D0ECV2P5P0C11QAV1',
+	name: 'HELLO-5',
+	discount: 0.05		
+}
 ```
 ### 20% one-time discount coupon for John
 ```js
@@ -87,7 +91,7 @@ coupon().give("5%");
 ```
 ## Test
 
-		npm test
+npm test
 
 ## License
 
