@@ -20,6 +20,22 @@ describe("Coupon", function () {
             it("should accept String meaning name of Coupon", function () {
                 Coupon.create("HELLO").name.should.be.equal("HELLO");
             });
+
+            it("should accept Object meaning serialized instance of Coupon", function () {
+                var json = {
+                    "id": "asdfqwer",
+                    "name": "HELLO",
+                    "discount": 0.1,
+                    "count": 1,
+                    "countMax": 10,
+                    "expirationDate": new Date(),
+                    "user": "Steve Jobs",
+                    "service": "Banana"
+                };
+                var coupon = Coupon.create(json);
+                coupon.name.should.be.equal("HELLO");
+                coupon.id.should.be.equal("asdfqwer");
+            });
         });
     });
 
