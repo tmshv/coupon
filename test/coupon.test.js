@@ -56,6 +56,16 @@ describe("Coupon", function () {
                 inst.id = "HELLO-LOL";
                 inst.id.should.be.equal(old);
             });
+
+            it("should be enumerable", function () {
+                var inst = Coupon.create();
+                var clone = {};
+                for(var i in inst) {
+                    clone[i] = inst;
+                }
+
+                clone.should.have.property("id");
+            });
         });
 
         describe("name", function () {
