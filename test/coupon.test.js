@@ -36,6 +36,14 @@ describe("Coupon", function () {
                 coupon.name.should.be.equal("HELLO");
                 coupon.id.should.be.equal("asdfqwer");
             });
+
+            it("should preprocess discount field", function () {
+                var json = {
+                    "discount": "2%"
+                };
+                var coupon = Coupon.create(json);
+                coupon.discount.should.be.equal(0.02);
+            });
         });
     });
 
