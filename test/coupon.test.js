@@ -35,6 +35,9 @@ describe("Coupon", function () {
                 var coupon = Coupon.create(json);
                 coupon.name.should.be.equal("HELLO");
                 coupon.id.should.be.equal("asdfqwer");
+                coupon.count.should.be.equal(1);
+                coupon.countMax.should.be.equal(10);
+                coupon.discount.should.be.equal(0.1);
             });
 
             it("should preprocess discount field", function () {
