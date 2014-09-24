@@ -1,6 +1,6 @@
 {
     "name": "coupon",
-    "version": "0.4",
+    "version": "0.4.0",
     "description": "Coupons generator for e-commerce",
     "main": "index.js",
     "scripts": {
